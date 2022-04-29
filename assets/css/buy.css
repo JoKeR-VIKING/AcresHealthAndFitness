@@ -1,0 +1,45 @@
+body
+{
+    height: 100vh;
+}
+
+.background
+{
+    position: fixed;
+    right: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0.5;
+}
+
+
+.plans
+{
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.buy-btn
+{
+    padding: 3%;
+    border-radius: 10px;
+    margin-top: 10%;
+    border: none;
+    outline: none;
+}
