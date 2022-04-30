@@ -7,3 +7,19 @@
     min-width: 100%;
     opacity: 0.5;
 }
+
+.intro
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.title, .quote
+{
+    margin-top: 1%;
+    font-size: 4rem;
+}

@@ -101,17 +101,19 @@ module.exports.oldUser = function (req, res) {
         }
         else
         {
-            check = `SELECT * FROM trainers WHERE email = '${req.body.email}' AND password = '${req.body.password}'`;
-            connection.query(check, function (err, result) {
-                if (result.length === 1)
-                {
-                    req.session.email = req.body.email;
-                    req.session.isClient = false;
-                    console.log("Logged in!");
-                }
+            // check = `SELECT * FROM trainers WHERE email = '${req.body.email}' AND password = '${req.body.password}'`;
+            // connection.query(check, function (err, result) {
+            //     if (result.length === 1)
+            //     {
+            //         req.session.email = req.body.email;
+            //         req.session.isClient = false;
+            //         console.log("Logged in!");
+            //     }
+            //
+            //     return res.redirect('/');
+            // });
 
-                return res.redirect('/');
-            });
+            return res.redirect('/');
         }
     });
 };

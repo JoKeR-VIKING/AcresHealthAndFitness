@@ -95,12 +95,14 @@ module.exports.training = function (req, res) {
                     return;
                 }
 
-                console.log(result);
+                let temp = [];
+                for (let x in result)
+                    temp.push(result[x]['link'])
 
                 return res.render('training', {
                     title: "Acres Fitness Club | Training",
                     email: req.session.email,
-                    videos: result,
+                    videos: temp,
                     isClient: true
                 });
             });
